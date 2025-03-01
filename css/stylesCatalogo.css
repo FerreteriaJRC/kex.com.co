@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  background-color: rgb(255, 255, 255);
+  overflow:hidden;
+  padding-top: 3vh;
+}
+.carousel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.carousel.carousel--with-overflow{
+    overflow: visible;
+    @media (min-width: 768px){
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+}
+.carousel__slide-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+.carousel__slide{
+    flex: 0 0 33.333%;
+    transition: transform 0.5s ease;
+    &.active .carousel__slide-inner{
+        background-color: rgba(0, 250, 154, 0);
+        height: 60vh;
+    }
+    &.selected .carousel__slide-inner{
+        border: 5px solid rgb(36, 36, 36);
+    }
+    @media (max-width: 768px){
+        flex: 0 0 100%;
+        transform: translateX(-100%);
+    }
+}
+
+.carousel--four-cols .carousel__slide{
+    flex: 0 0 25%;
+}
+
+.a .carousel__slide-inner{
+    background-color: rgba(0, 255, 255, 0);
+}
+.b .carousel__slide-inner{
+    background-color: rgba(64, 224, 208, 0);
+}
+.c .carousel__slide-inner{
+    background-color: rgba(0, 255, 255, 0);
+}
+.d .carousel__slide-inner{
+    background-color: rgba(127, 255, 212, 0);
+}
+.e .carousel__slide-inner{
+    background-color: rgba(135, 207, 235, 0);
+}
+.f .carousel__slide-inner{
+    background-color: rgba(175, 238, 238, 0);
+}
+
+
+.carousel__slide-inner{
+    margin: 0 15px;
+    height: 50vh;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.carousel__navigation--left, .carousel__navigation--right{
+    background-color: #009847;
+    color: white;
+    min-height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+.carousel__navigation--left{
+    left: 0;
+}
+.carousel__navigation--right{
+    right: 0;
+}

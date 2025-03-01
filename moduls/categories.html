@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link rel="stylesheet" href="path/to/turn.css">
+        <script src="path/to/jquery.min.js"></script>
+        <script src="path/to/turn.min.js"></script>
+
+        <title>kex.com.co</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        .containerCategory{
+            display: flex;/* 3 columnas de igual tamaño */
+            flex-wrap: wrap;
+            margin-top: 60px !important;
+            justify-content: center;
+            gap: 20px;
+            width: 60%;
+            margin: auto;
+        }
+
+        .item{
+            border-radius: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+        }
+
+        .item:first-child, .item:last-child{
+            width: 60%;
+        }
+
+        .item-4, .item-3, .item-5{
+            gap: 10px !important;
+        }
+
+    </style>
+<body>
+    <!--Revisar el tema del header de manera que se pueda consultar por php-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="../assets/kex.png" width="30" height="30">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./moduls/sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./moduls/contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+    <div class="containerCategory">
+        <div class="item item-1"><img src="../assets/Abrasivos.png" style="width: 100%;"/></div>
+        <div class="item item-2"><img src="../assets/corte.png" style="width: 100%"></div>
+        <div class="item item-3"><img src="../assets/Fluidos.png" style="width: 100%"></div>
+        <div class="item item-4"><img src="../assets/Accesorios.png" style="width: 100%"></div>
+        <div class="item item-5"><img src="../assets/Maquinaria.png" style="width: 100%"></div>
+        <div class="item item-6"><img src="../assets/Materiales.png" style="width: 100%"></div>
+        <div class="item item-7"><img src="../assets/Medicion.png" style="width: 100%"></div>
+    </div>
+</body>
+</html>
