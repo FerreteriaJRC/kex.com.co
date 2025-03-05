@@ -21,7 +21,8 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Opcion 1-->
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <img src="./assets/kex.png" width="30" height="30">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -30,15 +31,58 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./moduls/sobreNosotros.html">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./moduls/contactanos.html">Contactanos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown">Categorias</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Abrasivos</a></li>
+                                <li><a class="dropdown-item" href="">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="">Corte</a></li>
+                                <li><a class="dropdown-item" href="">Maquinaria</a></li>
+                                <li><a class="dropdown-item" href="">Materiales</a></li>
+                                <li><a class="dropdown-item" href="">Fluidos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <!--Opcion 2-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
+                        <li class="nav-item flex-grow-1 text-center">
+                            <a class="nav-link text-start" href="./moduls/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <img src="./assets/kex.png" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown flex-grow-1 text-center">
+                            <a class="nav-link dropdown-toggle text-end" role="button" href="#" data-bs-toggle="dropdown">Categorias</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="./moduls/abrasivos/abrasivos.html">Abrasivos</a></li>
+                                <li><a class="dropdown-item" href="./moduls/abrasivos/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="./moduls/corte/corte.html">Corte</a></li>
+                                <li><a class="dropdown-item" href="./moduls/maquinaria/maquinaria.html">Maquinaria</a></li>
+                                <li><a class="dropdown-item" href="./moduls/materiales/materiales.html">Materiales</a></li>
+                                <li><a class="dropdown-item" href="./moduls/fluidos/fluidos.html">Fluidos</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- <button type="button" class="btn btn-secondary button-float">
             <a href="https://issuu.com/ferreteriajrc/docs/cat_logo24_1_" style="text-decoration: none; color: white">Catalogo KEX</a>
         </button> -->
         <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+        <!-- <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
             <div class="text-center my-5">
                 <img class="img-fluid mb-4" src="./assets/kex.png" alt="Logo KEX"/>
                 <h1 class="text-black fs-3 fw-bolder">KEX</h1>
@@ -46,91 +90,96 @@
             </div>
         </header>
         <!-- Content section-->
-        <section class="py-1">
+        <!-- <section class="py-1">
             <div class="container my-1">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <h2>Catalogo KEX</h2>
                         <p class="lead">Especializados en industrial metalmecanica, automotriz, petrolera y otros campos industrialesm a traves de productos con calidad y economia, y que a lo largo de la ultima decada han aportado al valor comercial de la marca una sobresaliente alternativa en la industria en eñl mercado laboral</p>
                         <!--<p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in the universe.</p>-->
-                    </div>
+                    <!--</div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Section Catergory, Quienes Somos-->
-        <section class="d-flex flex-wrap justify-content-center p-5">
-            <div class="px-5 position-relative d-flex justify-content-center align-items-center">
+        <section class="col-12 d-flex flex-wrap justify-content-center p-5">
+            <div class="col-12 col-md-6 col-lg-6 col-xxl-6 position-relative d-flex justify-content-center align-items-center mb-1">
+                <a href="./moduls/contactanos.html">
+                    <img src="./assets/button/quienesSomos.png" width="500px" alt="Quienes Somos" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">                
+                </a>
                 <div class="position-absolute top-50 start-50 translate-middle text-center">
                     <strong class="fs-2 text-white">QUIENES SOMOS</strong>
                 </div>
-                <a href="./moduls/contactanos.html">
-                    <img src="./assets/button/quienesSomos.png" width="500px" alt="Quienes Somos" class="rounded-5">                
-                </a>
             </div>
             
-            <div class="">
-                <div class="col-12 m-1 d-flex">
-                    <div class="col-12 position-relative d-flex justify-content-center align-items-center">
-                        <a href="https://drive.google.com/file/d/1VKtLiwqfhOgbUWuzdC78FuxV9R66wUvP/view?usp=sharing">
-                            <img src="./assets/button/BOTON, MAQ.png" width="540px" alt="Maquinaria" class="rounded-5">
+            <div class="container col-12 col-md-6 col-lg-6 col-xxl-6 d-flex flex-wrap justify-content-center">
+                <div class="col-12 col-lg-12 justify-content-center d-flex">
+                    <div class="col-12 position-relative d-flex justify-content-center align-items-center m-1">
+                        <a href="./moduls/maquinaria/maquinaria.html">
+                            <img src="./assets/button/BOTON, MAQ.png" width="500px" alt="Maquinaria" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);" >
                         </a>
                         <div class="position-absolute top-50 start-50 translate-middle text-center">
-                            <strong class="fs-3 text-white">MAQUINARIA</strong>
+                            <strong class="fs-4 text-white">MAQUINARIA</strong>
                         </div>    
                     </div>
                 </div>
-                <div class="row d-flex m-1">
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
-                        <a href="./assets/categories/CORTE.pdf">
-                            <img src="./assets/button/BOTON.CORTE.webp" width="166px" alt="Corte" class="rounded-5">
+                <div class="d-flex justify-content-center">
+                    <div class="col-12 col-lg-4 col-xxl-4 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
+                        <a href="./moduls/corte/corte.html">
+                            <img src="./assets/button/BOTON.CORTE.webp" width="156px" alt="Corte" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
                         </a>
                         <div class="position-absolute top-50 start-50 translate-middle text-center">
-                            <strong class="fs-3 text-white">CORTE</strong>
+                            <strong class="fs-4 text-white">CORTE</strong>
                         </div>    
                     </div>
     
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
                         <a href="./moduls/medicion/medicion.html">
-                            <img src="./assets/button/BOTON.MEDICION.webp" width="166px" alt="Medicion" class="rounded-5">
+                            <img src="./assets/button/BOTON.MEDICION.webp" width="156px" alt="Medicion" class="rounded-5  img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
                         </a>
                         <div class="position-absolute top-50 start-50 translate-middle">
-                            <strong class="fs-3 text-white">MEDICION</strong>
+                            <strong class="fs-4 text-white">MEDICION</strong>
                         </div>
                     </div>
     
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
-                        <img src="./assets/button/BOTON.ACCESOR.webp" width="166px" alt="Accesorios" class="rounded-5">
+                    <div class="col-12 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
+                        <a href="./moduls/accesorios/accesorios.html">
+                            <img src="./assets/button/BOTON.ACCESOR.webp" width="156px" alt="Accesorios" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
+                        </a>
                         <div class="position-absolute top-50 start-50 translate-middle">
-                            <strong class="fs-3 text-white">ACCESORIOS</strong>
+                            <strong class="fs-4 text-white">ACCESORIOS</strong>
                         </div>
                     </div>
                 </div>
                 
-                <div class="row d-flex m-1">
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
+                <div class="d-flex m-1 d-flex justify-content-center">
+                    <div class="col-12 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
                         <a href="./moduls/fluidos/fluidos.html">
-                            <img src="./assets/button/BOTON.FLUIDOS.webp" width="166px" alt="Fluidos" class="rounded-5">
+                            <img src="./assets/button/BOTON.FLUIDOS.webp" width="156px" alt="Fluidos" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
                         </a>
                         <div class="position-absolute top-50 start-50 translate-middle text-center">
-                            <strong class="fs-3 text-white">FLUIDOS</strong>
+                            <strong class="fs-4 text-white">FLUIDOS</strong>
                         </div>
                     </div>
     
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
-                        <img src="./assets/button/BOTON.ABRASIV.webp" width="166px" alt="Abrasivos" class="rounded-5">
+                    <div class="col-12 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
+                        <a href="./moduls/abrasivos/abrasivos.html">
+                            <img src="./assets/button/BOTON.ABRASIV.webp" width="156px" alt="Abrasivos" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
+                        </a>
                         <div class="position-absolute top-50 start-50 translate-middle text-center">
-                            <strong class="fs-3 text-white">ABRASIVOS</strong>
+                            <strong class="fs-4 text-white">ABRASIVOS</strong>
                         </div>
                     </div>
     
-                    <div class="col-4 position-relative d-flex justify-content-center align-items-center">
-                        <img src="./assets/button/BOTON.MATERIAL.webp" width="166px" alt="Materiales" class="rounded-5">
+                    <div class="col-12 col-lg-4 col-xxl-4 position-relative d-flex justify-content-center align-items-center m-1">
+                        <a href="./moduls/materiales/materiales.html">
+                            <img src="./assets/button/BOTON.MATERIAL.webp" width="156px" alt="Materiales" class="rounded-5 img-fluid" style="filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(3);">
+                        </a>
                         <div class="position-absolute top-50 start-50 translate-middle text-center">
-                            <strong class="fs-3 text-white">MATERIALES</strong>
+                            <strong class="fs-4 text-white">MATERIALES</strong>
                         </div>
                     </div> 
                 </div>
-            </div>
             </div>
         </section>
         <!-- <<iframe src="../kex.com/moduls/catalogoNew.html" width="100%" height="800px"></iframe> -->
