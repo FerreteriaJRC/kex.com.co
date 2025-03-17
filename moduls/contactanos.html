@@ -81,7 +81,7 @@
             <img src="../assets/BANDA.kex.webp" alt="Asesorate" class="img-fluid mb-4">
         </section>
 
-        <section class="container d-flex flex-wrap justify-content-center mt-5 mb-5" style="background-color: rgba(255,255,255,0.5)">
+        <section class="container d-flex flex-wrap justify-content-center align-content-center mt-5 mb-5" style="background-color: rgba(255,255,255,0.5)">
             <div class="d-flex flex-wrap justify-content-center align-content-center mb-5">
                 <div class="m-1">
                     <img src="../assets/icon/ICONO.CORREO.webp" width="20vh">    
@@ -90,30 +90,40 @@
                     <a href="mailto:ventas@kex.com.co" style="text-decoration: none;"><p class="text-white"><b>ventas@kex.com.co</b></p></a>     
                 </div>
             </div>
-            <div class="justify-content-center align-content-center mb-5">
+            <div class="d-flex conainer">
             <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">NOMBRE</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="surname" class="form-label">APELLIDO</label>
-                    <input type=text" class="form-control" id="surname">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="mb-3 col-6">
+                                <label for="name" class="form-label">NOMBRE</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="surname" class="form-label">APELLIDO</label>
+                                <input type=text" class="form-control" id="surname">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="mb-3 col-6">
+                                <label for="email">CORREO</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="telephone">TELEFONO</label>
+                                <input type="number" class="form-control" ="telephone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <label for="message">ESCRIBE TU MENSAJE</label>
+                            <textarea name="" id="message" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-                
-                <div class="mb-3">
-                    <label for="email">CORREO</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="telephone">Telefono</label>
-                    <input type="number" class="form-control" ="telephone">
-                </div>
-                <div>
-                    <label for="message">Escribe tu mensaje</label>
-                    <textarea name="" id="message" class="form-control" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
             </div>
         </section>
